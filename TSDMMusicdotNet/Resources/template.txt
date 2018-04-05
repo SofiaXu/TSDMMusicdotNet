@@ -1,0 +1,55 @@
+[free]
+购买原地址 Original Site：[packagelink/]
+封面 Cover：
+[cover/]
+[hr]
+[spoiler=专辑信息 Album Infomaton]
+标题 Title：[albumtitle/]
+艺术家 Artist：[artistname/]
+发售日 Released Date：[releasedate/]
+解析度 Resolution：[resolution/]
+曲目数 Track Number：[tracknumber/]
+[/spoiler]
+[spoiler=介绍原文 Introduction (Japanese)]
+[introduction/]
+[/spoiler]
+[hr]
+[spoiler=介绍摘要译文 Translated Introduction Summary]
+中文：
+
+English：
+
+[/spoiler]
+[hr]
+[spoiler=曲目表 Track List]
+[tracklist/]
+[/spoiler]
+[hr]
+自购证明 Certification：
+[hide=999999][certification/][/hide] 
+[hr]
+[spoiler=听前提示 Tips before you listen to music]
+推荐的享受高解析度资源的方式Recommend ways to open HI-RES music files：
+计算机 Computer：Groove Music for Windows 10，Windows Media Player，foobar2000 ……
+手机 Smartphone：海贝音乐 Hiby Music，NePlayer，Android System Music，foobar2000 ……
+[/spoiler]
+[hr]
+注意！当您购买下本帖时，就默认视为同意以下最终用户协议。
+Pay attention please, if you buy this album from here, you will be regard as that you have agreed the EULA which shows below.
+1.禁止非授权转载，禁止所有形式的对本帖中的付费文件进行直接非授权转载（包括网易云音乐、电台等），但允许转载本帖链接
+1.You cannot share the files secondly without sharer's permission. But it is permissed that you can share the link of this page
+2.禁止转码，即禁止翻录或转换为MP3或使文件MD5改变等的行为 
+2.You cannot transcode FLAC to MP3 or any other things to change MD5 of files.
+3.二次分享时需使用本帖链接，而非本帖的百度云链接或二次分享的百度云链接或其他任何形式直接分享文件或文件夹链接
+3.It is important that you cannot share links of files below directly but you can share link of this page. 
+4.一切以中文版最终用户协议为准
+4.The English version is based on the Chinese version. So if you have any question of the English version, please use the Chinese version. 
+[/free] 
+下载前务必阅读最终用户协议
+Please read EULA before downloading forcely
+度盘 Baidu Cloud Drive：
+[bd1/]
+带恢复压缩包度盘 Baidu Cloud Drive (rar5 5%) :
+[bd2/]
+无法连接到百度云或对百度云限速反感的 for User who cannot connect to Baidu Cloud Drive： 
+MEGA:[mega1/]
