@@ -12,12 +12,7 @@ namespace TSDMMusicdotNet
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new MainWindowsViewModel();
-        }
-
-        private void TextBox_TextChanged()
-        {
-
+            DataContext = new MainWindowViewModel(LayoutFrame.NavigationService);
         }
     }
 }

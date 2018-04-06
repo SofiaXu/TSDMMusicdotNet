@@ -59,5 +59,11 @@ Please read EULA before downloading forcely
 无法连接到百度云或对百度云限速反感的 for User who cannot connect to Baidu Cloud Drive： 
 MEGA:[mega1/]</Value>
     </Setting>
+    <Setting Name="cookie" Type="System.Net.CookieContainer" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="IsFirstUse" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

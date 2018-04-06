@@ -5,107 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TSDMMusicdotNet"
         mc:Ignorable="d"
-        Title="Mora自购发帖工具 TSDM@许亚奇567 ver1.0.0.0" MinHeight="500" MinWidth="700" Height="500" Width="700">
+        Title="Mora自购发帖工具 TSDM@许亚奇567 ver1.1.0.0" MinHeight="500" MinWidth="700" Height="500" Width="700">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="5" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="3" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="5" />
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="5" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="5" />
-            <RowDefinition Height="Auto" MinHeight="25"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5"/>
         </Grid.RowDefinitions>
-        <Grid Grid.Column="1" Grid.Row="1">
+        <Border Grid.RowSpan="3" Margin="0,0,3,0">
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="auto" />
-                    <RowDefinition Height="5" />
-                    <RowDefinition Height="auto" />
-                    <RowDefinition Height="5" />
-                    <RowDefinition Height="auto" />
-                    <RowDefinition Height="5" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition MinWidth="82" Width="Auto"/>
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <Label Content="Mora链接" />
-                    <TextBox Text="{Binding MoraLink}" Grid.Column="1" />
-                </Grid>
-                <Grid Grid.Row="2">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition MinWidth="82" Width="Auto"/>
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <Label Content="自购证明外链" />
-                    <TextBox Text="{Binding CertificationLink}" Grid.Column="1" Height="25" VerticalAlignment="Bottom" />
-                </Grid>
-                <ItemsControl Grid.Row="4" ItemsSource="{Binding DownloadLinkCollection}">
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate>
-                            <Grid Margin="0,0,0,5" >
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition MinWidth="82" Width="Auto"/>
-                                    <ColumnDefinition Width="*" />
-                                </Grid.ColumnDefinitions>
-                                <Label Content="{Binding DownloadLinkName}" />
-                                <TextBox Text="{Binding DownloadLink}" Grid.Column="1" />
-                            </Grid>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ItemsControl>
-                <Grid Grid.Row="7">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="auto" />
-                        <ColumnDefinition Width="5" />
-                        <ColumnDefinition Width="auto" />
-                    </Grid.ColumnDefinitions>
-                    <Button Grid.Column="1" Content="清除" Command="{Binding ClearCommand}" />
-                    <Button Grid.Column="3" Content="生成" Command="{Binding CreateCommand}" />
-                </Grid>
+                <Grid.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="{x:Null}"/>
+                        <Setter Property="BorderBrush" Value="{x:Null}"/>
+                        <Setter Property="FontSize" Value="18"/>
+                        <Setter Property="Margin" Value="0,0,2,2"/>
+                        <Setter Property="MinWidth" Value="97"/>
+                    </Style>
+                </Grid.Resources>
+                <Button Content="生成帖子" Command="{Binding ChangePage}" CommandParameter="/TSDMMusicdotNet;component/Views/PostPage.xaml"/>
+                <Button Content="登陆信息" Grid.Row="1" Command="{Binding ChangePage}"/>
+                <Button Content="编辑模板" Grid.Row="2" Command="{Binding ChangePage}"/>
+                <Button Content="关于" Grid.Row="3" Command="{Binding ChangePage}" CommandParameter="/TSDMMusicdotNet;component/Views/AboutPage.xaml"/>
+                <Button Content="设置" Grid.Row="6" Command="{Binding ChangePage}"/>
             </Grid>
-        </Grid>
-        <Grid Grid.Column="3" Grid.Row="1">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto" />
-                    <RowDefinition Height="5" />
-                    <RowDefinition Height="*" />
-                </Grid.RowDefinitions>
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="auto" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <Label Content="标题" />
-                    <TextBox Text="{Binding OutTitle}" Grid.Column="1" />
-                </Grid>
-                <Grid Grid.Row="2">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="auto" />
-                        <RowDefinition Height="*" />
-                    </Grid.RowDefinitions>
-                    <Label Content="帖子内容 (Ctrl+A, Ctrl+C复制到发帖页面)" />
-                    <TextBox Text="{Binding OutBody}" Grid.Row="1" />
-                </Grid>
-            </Grid>
-        </Grid>
-        <Grid Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" >
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition Width="3"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <ProgressBar Grid.Column="2" Value="{Binding NowProgress}" Maximum="3"/>
-        </Grid>
+        </Border>
+        <Frame Grid.Column="1" Grid.Row="1" NavigationUIVisibility="Hidden" Name="LayoutFrame"/>
     </Grid>
 </Window>
