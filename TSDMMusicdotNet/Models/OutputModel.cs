@@ -61,7 +61,7 @@ namespace TSDMMusicdotNet.Models
             {
                 title += "[HI-RES]";
             }
-            title += ReleaseDateType2 + AlbumTitle + "/" + ArtistName + "[" + MediaFormat + "]";
+            title += "[" + ReleaseDateType2 + "]" + AlbumTitle + "/" + ArtistName + "[" + MediaFormat + "]";
             return title;
         }
         public string OutputBody(string template)

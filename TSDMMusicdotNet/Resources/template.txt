@@ -53,3 +53,5 @@ Please read EULA before downloading forcely
 [bd2/]
 无法连接到百度云或对百度云限速反感的 for User who cannot connect to Baidu Cloud Drive： 
 MEGA:[mega1/]
+OD:[od1/]
+GD:[gd1/]
